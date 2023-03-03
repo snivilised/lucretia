@@ -3,10 +3,11 @@ package lucretia
 import "fmt"
 
 type Greeter struct {
-	Name  string
-	Title int
+	Forename string
+	Surname  string
+	Title    int
 }
 
 func (g *Greeter) Hello() string {
-	return fmt.Sprintf("---> Hello %v %v", g.Title, g.Name)
+	return fmt.Sprintf("---> Hello %v. %v %v", g.Title, g.Forename, g.Surname)
 }
