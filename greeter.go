@@ -5,7 +5,7 @@ import "fmt"
 type Greeter struct {
 	Forename string
 	Surname  string
-	Title    int
+	Title    string
 }
 
 func (g *Greeter) Hello() string {
