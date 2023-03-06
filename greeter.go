@@ -7,10 +7,15 @@ type Greeter struct {
 	Surname  string
 	Title    string
 	Message  string
+	Age      uint
 }
 
 func (g *Greeter) Hello() string {
-	return fmt.Sprintf("---> Hello %v. %v %v: %v",
-		g.Title, g.Forename, g.Surname, g.Message,
+	prompt := "What's your poison"
+	if g.Age <= 18 {
+		prompt = "Milk and cookies for you"
+	}
+	return fmt.Sprintf("---> Hello %v. %v %v: %v == %v",
+		g.Title, g.Forename, g.Surname, g.Message, prompt,
 	)
 }
