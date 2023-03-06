@@ -1,6 +1,9 @@
 package lucretia
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 type Refreshment struct {
 	Aperitif string
@@ -9,7 +12,10 @@ type Refreshment struct {
 }
 
 func (r *Refreshment) Serve() string {
-	return fmt.Sprintf("Aperitif: %v, Vintage: %v and Chaser: %v",
-		r.Aperitif, r.Vintage, r.Chaser,
+	min := 2
+	max := 10
+	treats := rand.Intn(max-min) + min
+	return fmt.Sprintf("Aperitif: %v, Vintage: %v, Chaser: %v and :%v surprise treats",
+		r.Aperitif, r.Vintage, r.Chaser, treats,
 	)
 }
