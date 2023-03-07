@@ -25,6 +25,7 @@ jobs:
         with:
           configuration: "./config/changelog.config.json"
           fromTag: "0.1.0"
+          toTag: "0.1.4"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
