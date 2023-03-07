@@ -15,7 +15,7 @@ func (g *Greeter) Hello() string {
 	if g.Age <= 18 {
 		prompt = "What's a kid like you doing here, go home junior"
 	}
-	return fmt.Sprintf("---> Hello %v. %v %v: %v == %v",
+	return fmt.Sprintf("---> 👋👋 Hello %v. %v %v: %v 🧿 %v",
 		g.Title, g.Forename, g.Surname, g.Message, prompt,
 	)
 }
