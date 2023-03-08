@@ -13,6 +13,7 @@ var _ = Describe("Refreshment", func() {
 			Aperitif: "Sparkling",
 			Vintage:  "Rioja",
 			Chaser:   "Goldslagger",
+			Snack:    "Pizza",
 		}
 		Expect(refresh.Serve()).ToNot(BeNil())
 	})
