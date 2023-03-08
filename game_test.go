@@ -13,6 +13,7 @@ var _ = Describe("Game", func() {
 			Sport:       "Tennis",
 			NoOfPlayers: 2,
 			IsRacket:    true,
+			IsOlympic:   true,
 		}
 		Expect(game.Play()).ToNot(BeNil())
 	})
