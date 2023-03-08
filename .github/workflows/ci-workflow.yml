@@ -42,7 +42,7 @@ jobs:
         run: |
           mkdir -p ./coverage
 
-      - run: go test -v -coverprofile=./coverage/coverage.out ./...
+      - run: go test ./... -v -coverprofile=./coverage/coverage.out -coverpkg=./...
 
       - uses: shogo82148/actions-goveralls@v1
         with:
