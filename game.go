@@ -10,6 +10,6 @@ type Game struct {
 }
 
 func (g *Game) Play() string {
-	return fmt.Sprintf("🎯 Sport %v, #️⃣ No Of Players %v, 🎾Is Racket sport? %v, Is Olympic? %v",
+	return fmt.Sprintf("🎯 Sport %v, #️⃣ No Of Players %v, 🎾Is Racket sport? %v, ⭕ Is Olympic? %v",
 		g.Sport, g.NoOfPlayers, g.IsRacket, g.IsOlympic)
 }
