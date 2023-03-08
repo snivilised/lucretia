@@ -13,7 +13,7 @@ type Greeter struct {
 func (g *Greeter) Hello() string {
 	prompt := "What's your poison"
 	if g.Age <= 18 {
-		prompt = "What's a kid like you doing here, go home junior"
+		prompt = "go home whipper snapper, no 🥣 soup for you"
 	}
 	return fmt.Sprintf("---> 👋👋 Hello %v. %v %v: %v 🧿 %v",
 		g.Title, g.Forename, g.Surname, g.Message, prompt,
